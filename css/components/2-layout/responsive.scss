@@ -1,0 +1,361 @@
+// 1500px
+@include xxxxlg-xxxxxlg {
+  .main {
+    padding-top: 170px;
+  }
+  .lang {
+    margin: 0 14px;
+    padding-right: 15px;
+    & > span {
+      width: 24px;
+      height: 24px;
+    }
+    &__menu {
+      a {
+        span {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  @include header-xxxxlg-xxxxxlg;
+  @include nav-xxxxlg-xxxxxlg;
+  @include offer-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  h1 {
+    font-size: 54px;
+    &.sm {
+      font-size: 50px;
+    }
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 32px;
+    &.big {
+      font-size: 35px;
+    }
+  }
+  p {
+    &.big {
+      font-size: 30px;
+    }
+  }
+  @include hero-xxxlg-xxxxlg;
+  @include contact-xxxlg-xxxxlg;
+  @include article-xxxlg-xxxxlg;
+  @include footer-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  h1 {
+    font-size: 50px;
+    &.sm {
+      font-size: 45px;
+    }
+  }
+  h2 {
+    font-size: 45px;
+    &.sm {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-size: 28px;
+    &.big {
+      font-size: 32px;
+    }
+  }
+  h4 {
+    font-size: 26px;
+  }
+  p {
+    &.big {
+      font-size: 25px;
+    }
+  }
+  body {
+    font-size: 18px;
+  }
+  .title {
+    margin-bottom: 40px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 18px 30px;
+    &.big {
+      font-size: 16px;
+      padding: 22px 30px;
+    }
+  }
+  @include hero-xlg-xxlg;
+  @include accom-xlg-xxlg;
+  @include offer-xlg-xxlg;
+  @include tour-xlg-xxlg;
+  @include feature-xlg-xxlg;
+  @include news-xlg-xxlg;
+  @include article-xlg-xxlg;
+  @include contact-xlg-xxlg;
+  @include footer-xlg-xxlg;
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  h1 {
+    font-size: 45px;
+    &.sm {
+      font-size: 40px;
+    }
+  }
+  h2 {
+    font-size: 40px;
+    &.sm {
+      font-size: 35px;
+    }
+  }
+  body {
+    &.hidden {
+      overflow: unset;
+    }
+    &.active {
+      overflow: hidden;
+    }
+  }
+  .main {
+    padding-top: 90px;
+  }
+  .overlay {
+    display: none;
+  }
+  .lang {
+    order: 2;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    &::before {
+      display: none;
+    }
+    & > span {
+      display: none;
+    }
+    &__menu {
+      position: static;
+      opacity: 1;
+      transform: translate(0);
+      padding: 0;
+      max-height: unset;
+      flex-direction: row;
+      background-color: transparent;
+      box-shadow: unset;
+      a {
+        margin: 0;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        &:last-child {
+          margin: 0 28px 0 0;
+          order: -1;
+        }
+        span {
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+        }
+        b {
+          display: none;
+          text-decoration: underline;
+          font-weight: 500;
+          &.mob {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include feature-lg-xlg;
+  @include article-lg-xlg;
+}
+// 930px
+@include md-lg {
+  h1 {
+    font-size: 42px;
+    &.sm {
+      font-size: 35px;
+    }
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 120%;
+    &.big {
+      font-size: 28px;
+    }
+  }
+  .title {
+    margin-bottom: 30px;
+    &__buttons {
+      .button {
+        margin-right: 12px;
+      }
+    }
+    h1,
+    h2 {
+      margin-bottom: 18px;
+    }
+    h6 {
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 24px;
+      span {
+        margin: 6px 0;
+      }
+    }
+  }
+  .button {
+    font-size: 14px;
+    padding: 15px 22px;
+
+    span {
+      width: 14px;
+      height: 10px;
+      margin-left: 8px;
+    }
+  }
+  .video {
+    padding-bottom: 56%;
+    &__play {
+      span {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+      }
+      b {
+        font-size: 12px;
+      }
+    }
+  }
+  @include hero-md-lg;
+  @include accom-md-lg;
+  @include offer-md-lg;
+  @include tour-md-lg;
+  @include feature-md-lg;
+  @include news-md-lg;
+  @include article-md-lg;
+  @include contact-md-lg;
+  @include footer-md-lg;
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h6 {
+    letter-spacing: 0.005em;
+  }
+  p {
+    &.big {
+      font-size: 22px;
+    }
+  }
+  @include hero-sm-md;
+  @include news-sm-md;
+  @include article-sm-md;
+  @include contact-sm-md;
+  @include footer-sm-md;
+}
+// 650px
+@include sm-md-extra {
+  @include hero-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  p {
+    &.big {
+      font-size: 18px;
+    }
+  }
+  .main {
+    padding-top: 80px;
+  }
+  .title {
+    margin-bottom: 22px;
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+      .button {
+        margin: 0 0 15px 0;
+      }
+    }
+    h1,
+    h2 {
+      margin-bottom: 12px;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+  }
+  .video {
+    &__play {
+      span {
+        width: 40px;
+        height: 40px;
+      }
+      b {
+        font-size: 11px;
+        font-weight: 500;
+        &::before {
+          height: 1px;
+        }
+      }
+    }
+  }
+  .button {
+    &.big {
+      font-size: 16px;
+      padding: 18px 20px;
+      border-radius: 8px;
+    }
+  }
+  .container {
+    border-top: unset !important;
+  }
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  @include hero-xsm-sm;
+  @include accom-xsm-sm;
+  @include offer-xsm-sm;
+  @include tour-xsm-sm;
+  @include feature-xsm-sm;
+  @include news-xsm-sm;
+  @include article-xsm-sm;
+  @include contact-xsm-sm;
+}
+// 440px
+@include xxsm-xsm {
+  @include hero-xxsm-xsm;
+}
+// 390px
+@include xxxsm-xxsm {
+  // @include hero-xxxsm-xxsm;
+}

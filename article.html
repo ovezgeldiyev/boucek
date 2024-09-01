@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Clanek</title>
+  </head>
+
+  <body>
+    <!-- header start
+    =========================================== -->
+    <header class="header light" id="header">
+      <div class="auto__container">
+        <div class="header__inner">
+          <div class="header__inner-contact">
+            <a href="https://maps.app.goo.gl/5xkD9kyP2vXC6A9b7">
+              <span>
+                <svg>
+                  <use xlink:href="#location"></use>
+                </svg>
+              </span>
+              Lipno nad Vltavou 16
+            </a>
+            <a href="mailto:bouceklipno@lafa.cz">
+              <span class="big">
+                <svg>
+                  <use xlink:href="#mail"></use>
+                </svg>
+              </span>
+              bouceklipno@lafa.cz
+            </a>
+          </div>
+          <a href="index.html" class="header__inner-logo">
+            <img src="./images/logo.png" alt="" />
+            <img class="dark" src="./images/logo-red.png" alt="" />
+          </a>
+          <div class="header__inner-buttons"></div>
+          <div class="burger__outer" id="menuBtn">
+            <b> Menu </b>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav" id="menu">
+        <div class="nav__inner">
+          <ul class="nav__inner-links">
+            <li>
+              <button
+                type="button"
+                class="nav__inner-link dropBtn"
+                data-drop="#drop-1"
+              >
+                <span>Hotel</span>
+              </button>
+              <div class="drop dropEvent" id="drop-1">
+                <div class="auto__container">
+                  <div class="drop__inner">
+                    <div class="drop__inner-row">
+                      <a href="#"> Hotelové pokoje </a>
+                      <hr />
+                      <a href="#"> Ceník </a>
+                      <hr />
+                      <a href="#"> Konferenční místnost </a>
+                      <hr />
+                      <a href="#"> Fotogalerie </a>
+                      <hr />
+                      <a href="#"> Hotelové služby </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="nav__inner-link dropBtn"
+                data-drop="#drop-2"
+              >
+                <span>apartmány</span>
+              </button>
+              <div class="drop dropEvent" id="drop-2">
+                <div class="auto__container">
+                  <div class="drop__inner">
+                    <div class="drop__inner-row">
+                      <a href="#">Profilované taškové krytiny </a>
+                      <hr />
+                      <a href="#"> Hladké krytiny </a>
+                      <hr />
+                      <a href="#"> Střešní trapézové plechy </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="nav__inner-link dropBtn"
+                data-drop="#drop-3"
+              >
+                <span>vip</span>
+              </button>
+              <div class="drop dropEvent" id="drop-3">
+                <div class="auto__container">
+                  <div class="drop__inner">
+                    <div class="drop__inner-row">
+                      <a href="#"> Hotelové pokoje </a>
+                      <hr />
+                      <a href="#"> Ceník </a>
+                      <hr />
+                      <a href="#"> Konferenční místnost </a>
+                      <hr />
+                      <a href="#"> Fotogalerie </a>
+                      <hr />
+                      <a href="#"> Hotelové služby </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="nav__inner-link dropBtn"
+                data-drop="#drop-4"
+              >
+                <span>economy</span>
+              </button>
+              <div class="drop dropEvent" id="drop-4">
+                <div class="auto__container">
+                  <div class="drop__inner">
+                    <div class="drop__inner-row">
+                      <a href="#"> Hotelové pokoje </a>
+                      <hr />
+                      <a href="#"> Ceník </a>
+                      <hr />
+                      <a href="#"> Konferenční místnost </a>
+                      <hr />
+                      <a href="#"> Fotogalerie </a>
+                      <hr />
+                      <a href="#"> Hotelové služby </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="nav__inner-link dropBtn"
+                data-drop="#drop-5"
+              >
+                <span>restaurace</span>
+              </button>
+              <div class="drop dropEvent" id="drop-5">
+                <div class="auto__container">
+                  <div class="drop__inner">
+                    <div class="drop__inner-row">
+                      <a href="#"> Hotelové pokoje </a>
+                      <hr />
+                      <a href="#"> Ceník </a>
+                      <hr />
+                      <a href="#"> Konferenční místnost </a>
+                      <hr />
+                      <a href="#"> Fotogalerie </a>
+                      <hr />
+                      <a href="#"> Hotelové služby </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="nav__inner-link base"> aktivity </a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav__inner-link base"> kontakt </a>
+            </li>
+          </ul>
+          <div class="nav__inner-buttons">
+            <a href="tel:+420 777 314 623" class="nav__inner-phone">
+              <span>
+                <svg>
+                  <use xlink:href="#phone"></use>
+                </svg>
+              </span>
+              +420 777 314 623
+            </a>
+            <div class="lang">
+              <span>
+                <img src="./images/icons/flags/czech.svg" alt="" />
+              </span>
+              <div class="lang__menu">
+                <a href="#">
+                  <span>
+                    <img src="./images/icons/flags/uk.svg" alt="" />
+                  </span>
+                  <b class="mob"> English </b>
+                  <b> EN </b>
+                </a>
+                <a href="#">
+                  <span>
+                    <img src="./images/icons/flags/germany.svg" alt="" />
+                  </span>
+                  <b class="mob"> deutsch </b>
+                  <b> DE </b>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="button primary"> rezervovat pokoj </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end
+    =========================================== -->
+    <div class="overlay" id="overlay"></div>
+    <main class="main">
+      <!-- article start
+    =========================================== -->
+      <section class="article">
+        <div class="auto__container">
+          <div class="article__inner">
+            <div class="title">
+              <h6>co je u nás nového?</h6>
+              <h1>Výstava Lego na Lipně</h1>
+              <p>
+                Třípokojový apartmánový byt s balkónem, koupelnou a plně
+                vybavenou kuchyňskou linkou (varná deska, rychlovarná konvice,
+                mikrovlnná trouba, lednice a potřebné nádobí).
+              </p>
+            </div>
+            <div class="articleImage sm">
+              <img src="./images/article/2.png" alt="" />
+            </div>
+            <div class="article__inner-gallery" id="lightgallery">
+              <div class="articleItem" data-src="./images/gallery/4-big.png">
+                <div class="articleItem__inner">
+                  <img src="./images/gallery/4.png" alt="" />
+                </div>
+                <span>
+                  <img src="./images/icons/search.png" alt="" />
+                </span>
+              </div>
+              <div class="articleItem" data-src="./images/gallery/5-big.png">
+                <div class="articleItem__inner">
+                  <img src="./images/gallery/5.png" alt="" />
+                </div>
+                <span>
+                  <img src="./images/icons/search.png" alt="" />
+                </span>
+              </div>
+              <div class="articleItem" data-src="./images/gallery/4-big.png">
+                <div class="articleItem__inner">
+                  <img src="./images/gallery/4.png" alt="" />
+                </div>
+                <span>
+                  <img src="./images/icons/search.png" alt="" />
+                </span>
+              </div>
+              <div class="articleItem" data-src="./images/gallery/5-big.png">
+                <div class="articleItem__inner">
+                  <img src="./images/gallery/5.png" alt="" />
+                </div>
+                <span>
+                  <img src="./images/icons/search.png" alt="" />
+                </span>
+              </div>
+            </div>
+            <div class="article__inner-text">
+              <p>Publikováno: 5. května 2024</p>
+              <h2>Moderně zařízené apartmány</h2>
+              <p>
+                Moderně zařízené apartmány jsou ideální pro rodiny s dětmi,
+                které hledají nejenom široké sportovní vyžití, ale i komfort a
+                pohodlí. Apartmány leží 800 metrů od nástupní stanice lanovky
+                Skiareálu Lipno, 400 metrů od písčité pláže jezera Lipno a
+                bruslařské dráhy a 300 metrů od centra obce Lipno nad Vltavou,
+                kde najdete restaurace, obchůdky a další služby.
+              </p>
+              <h3>Vybavení kuchyně</h3>
+              <p>
+                Kuchyňský kout je součástí obývacího pokoje. Je vybaven
+                kuchyňskou linkou s vestavnými spotřebiči (ledničkou s mrazákem,
+                mikrovlnnou troubou, elektrickou varnou deskou, digestoří,
+                varnou konvicí) a kompletní sadou kuchyňského nádobí. Součástí
+                prostorného obývacího pokoje s TV a jídelním koutem je také
+                sedací rozkládací sedací souprava, která umožňuje pohodlné
+                přespání pro 2 osoby. Parkovat lze přímo u apartmánů. Každý
+                apartmán má navíc vlastní balkon vybavený zahradním nábytkem. V
+                celém areálu je Wi-Fi připojení k internetu zdarma.
+              </p>
+            </div>
+            <div class="articleImage">
+              <img src="./images/article/3.png" alt="" />
+            </div>
+            <div class="article__inner-text">
+              <h2>Moderně zařízené apartmány</h2>
+              <p>
+                Moderně zařízené apartmány jsou ideální pro rodiny s dětmi,
+                které hledají nejenom široké sportovní vyžití, ale i komfort a
+                pohodlí. Apartmány leží 800 metrů od nástupní stanice lanovky
+                Skiareálu Lipno, 400 metrů od písčité pláže jezera Lipno a
+                bruslařské dráhy a 300 metrů od centra obce Lipno nad Vltavou,
+                kde najdete restaurace, obchůdky a další služby.
+              </p>
+              <h3>Vybavení kuchyně</h3>
+              <p>
+                Kuchyňský kout je součástí obývacího pokoje. Je vybaven
+                kuchyňskou linkou s vestavnými spotřebiči (ledničkou s mrazákem,
+                mikrovlnnou troubou, elektrickou varnou deskou, digestoří,
+                varnou konvicí) a kompletní sadou kuchyňského nádobí. Součástí
+                prostorného obývacího pokoje s TV a jídelním koutem je také
+                sedací rozkládací sedací souprava, která umožňuje pohodlné
+                přespání pro 2 osoby. Parkovat lze přímo u apartmánů. Každý
+                apartmán má navíc vlastní balkon vybavený zahradním nábytkem. V
+                celém areálu je Wi-Fi připojení k internetu zdarma.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- article end
+    =========================================== -->
+      <!-- footer start
+    =========================================== -->
+      <footer class="footer">
+        <div class="auto__container">
+          <div class="footer__inner">
+            <div class="footer__inner-main">
+              <a href="index.html" class="footer__inner-logo">
+                <img src="./images/logo-black.png" alt="" />
+              </a>
+              <div class="footer__inner-langs">
+                <a href="#"> en </a>
+                <a href="#"> de </a>
+              </div>
+            </div>
+            <div class="footer__inner-row">
+              <div class="footer__inner-col">
+                <p>
+                  hotel bouček 4v1 <br />
+                  Lipno nad Vltavou 16 <br />
+                  382 78 Lipno nad Vltavou <br />
+                  Tel.: +420 777 314 623 <br />
+                </p>
+              </div>
+              <div class="footer__inner-col">
+                <a href="#"> Hotel Bouček *** </a>
+                <a href="#"> apartmány Bouček </a>
+                <a href="#"> Apartmány vip </a>
+                <a href="#"> Bouček economy </a>
+              </div>
+              <div class="footer__inner-col">
+                <a href="#">restaurace</a>
+                <a href="#"> pro firmy</a>
+                <a href="#">aktivity </a>
+                <a href="contact.html"> kontaktujte nás</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="copy">
+        <div class="auto__container">
+          <div class="copy__inner">
+            <p>
+              <b> © 2024 Hotel BouCZECH 4v1. Všechna práva vyhrazena. </b>
+              <a href="#">Ochrana osobních údajů.</a>
+              <a href="#">Prohlášení o Cookies</a>
+            </p>
+            <p>Web od <span>Alcedo Media.</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- footer end
+    =========================================== -->
+    </main>
+    <!-- Sprites
+    =========================================== -->
+ 
+    <svg style="display: none">
+      <symbol id="location" viewBox="0 0 16 20">
+        <path
+          d="M7.30919 18.7838L7.63458 18.4042L7.62366 18.3949L7.61221 18.3861L7.30919 18.7838ZM8.25593 18.7838L8.55601 19.1839L8.56484 19.177L8.25593 18.7838ZM7.76363 0.257812C3.50944 0.257812 0.0683594 3.70232 0.0683594 7.99095H1.06836C1.06836 4.25118 4.06515 1.25781 7.76363 1.25781V0.257812ZM0.0683594 7.99095C0.0683594 10.654 1.43443 13.1579 2.94681 15.1134C4.4664 17.0782 6.18581 18.5565 7.00617 19.1816L7.61221 18.3861C6.84203 17.7993 5.19103 16.3806 3.73784 14.5016C2.27744 12.6133 1.06836 10.3267 1.06836 7.99095H0.0683594ZM6.98379 19.1635C7.44751 19.5609 8.08821 19.5346 8.55593 19.1838L7.95593 18.3838C7.81774 18.4875 7.70104 18.4612 7.63458 18.4042L6.98379 19.1635ZM8.56484 19.177C9.38039 18.5362 11.0897 17.0589 12.6 15.0985C14.103 13.1474 15.4589 10.6533 15.4589 7.99095H14.4589C14.4589 10.3274 13.2586 12.6049 11.8078 14.4882C10.3642 16.3621 8.722 17.7818 7.94702 18.3907L8.56484 19.177ZM15.4589 7.99095C15.4589 3.70232 12.0178 0.257812 7.76363 0.257812V1.25781C11.4621 1.25781 14.4589 4.25118 14.4589 7.99095H15.4589ZM7.76363 10.4827C6.3735 10.4827 5.23404 9.34321 5.23404 7.95308H4.23404C4.23404 9.89549 5.82121 11.4827 7.76363 11.4827V10.4827ZM5.23404 7.95308C5.23404 6.56295 6.3735 5.42349 7.76363 5.42349V4.42349C5.82121 4.42349 4.23404 6.01066 4.23404 7.95308H5.23404ZM7.76363 5.42349C9.15376 5.42349 10.2932 6.56295 10.2932 7.95308H11.2932C11.2932 6.01066 9.70604 4.42349 7.76363 4.42349V5.42349ZM10.2932 7.95308C10.2932 9.34321 9.15376 10.4827 7.76363 10.4827V11.4827C9.70604 11.4827 11.2932 9.89549 11.2932 7.95308H10.2932Z"
+          fill="currentColor"
+        />
+      </symbol>
+      <symbol id="mail" viewBox="0 0 32 32" fill="currentColor">
+        <g>
+          <rect
+            fill="none"
+            height="22"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            width="30"
+            x="1"
+            y="5"
+          />
+          <polyline
+            fill="none"
+            points="1,5 16,20 31,5     "
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+          <line
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            x1="1"
+            x2="12"
+            y1="27"
+            y2="16"
+          />
+          <line
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            x1="31"
+            x2="20"
+            y1="27"
+            y2="16"
+          />
+        </g>
+      </symbol>
+      <symbol id="phone" viewBox="0 0 32 32" fill="currentColor">
+        <g>
+          <path
+            d="M22,9V1h-4   c-4.418,0-8,3.582-8,8v14c0,4.418,3.582,8,8,8h4v-8h-4c-2.209,0-4-1.791-4-4v-6c0-2.209,1.791-4,4-4H22z"
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+          <line
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            x1="18"
+            x2="18"
+            y1="9"
+            y2="1"
+          />
+          <line
+            fill="none"
+            stroke="currentColor"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+            x1="18"
+            x2="18"
+            y1="23"
+            y2="31"
+          />
+        </g>
+      </symbol>
+      <symbol id="minus" viewBox="0 96 960 960" fill="currentColor">
+        <path d="M200 616v-80h560v80H200Z" />
+      </symbol>
+      <symbol id="add" viewBox="0 96 960 960" fill="currentColor">
+        <path d="M440 856V616H200v-80h240V296h80v240h240v80H520v240h-80Z" />
+      </symbol>
+      <symbol id="chevronBot" viewBox="0 96 960 960" fill="currentColor">
+        <path d="M480 711 240 471l56-56 184 184 184-184 56 56-240 240Z" />
+      </symbol>
+    </svg>
+    <!-- js
+    =========================================== -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-zoom.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script type="text/javascript">
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+        licenseKey: "your_license_key",
+        speed: 500,
+        zoomFromOrigin: false,
+        selector: ".articleItem",
+        // ... other settings
+      });
+    </script>
+  </body>
+</html>

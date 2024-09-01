@@ -1,0 +1,381 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  .auto__container {
+    max-width: 1890px;
+    position: static;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: sticky;
+    animation-duration: 0.4s;
+    background-color: $white;
+    .header {
+      color: $black2;
+      &__inner {
+        &-logo {
+          img {
+            opacity: 0;
+            &.dark {
+              opacity: 1;
+            }
+          }
+        }
+        &-contact {
+          a {
+            color: $black2;
+            svg {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .nav {
+      background-color: $white;
+      border-color: rgba($color: $black2, $alpha: 0.1);
+      &__inner {
+        &-link {
+          color: $black2;
+          &::before {
+            border-color: $primary;
+          }
+          span {
+            &::after {
+              background-color: $primary;
+            }
+          }
+        }
+        &-phone {
+          color: $black2;
+          svg {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .drop {
+      background-color: $primary;
+      a {
+        color: $white;
+      }
+      hr {
+        background-color: $white;
+      }
+    }
+    .lang {
+      &::before {
+        border-color: $primary;
+      }
+    }
+    .button {
+      background-color: $primary;
+      border-color: transparent;
+      &:hover {
+        background-color: $main;
+      }
+    }
+  }
+  &.light {
+    background-color: $white;
+    .header {
+      color: $black2;
+      &__inner {
+        &-logo {
+          img {
+            opacity: 0;
+            &.dark {
+              opacity: 1;
+            }
+          }
+        }
+        &-contact {
+          a {
+            color: $black2;
+            svg {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+    .nav {
+      background-color: $white;
+      border-color: rgba($color: $black2, $alpha: 0.1);
+      &__inner {
+        &-link {
+          color: $black2;
+          &::before {
+            border-color: $primary;
+          }
+          span {
+            &::after {
+              background-color: $primary;
+            }
+          }
+        }
+        &-phone {
+          color: $black2;
+          svg {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .drop {
+      background-color: $primary;
+      a {
+        color: $white;
+      }
+      hr {
+        background-color: $white;
+      }
+    }
+    .lang {
+      &::before {
+        border-color: $primary;
+      }
+    }
+    .button {
+      background-color: $primary;
+      border-color: transparent;
+      &:hover {
+        background-color: $main;
+      }
+    }
+  }
+  &__inner {
+    padding: 44px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &-contact {
+      display: flex;
+      align-items: center;
+      min-height: 61px;
+      a {
+        font-size: 15px;
+        line-height: 100%;
+        font-family: $jost;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        text-transform: uppercase;
+        &:last-child {
+          margin: 0;
+        }
+        &:hover {
+          opacity: 1;
+          color: $primary;
+        }
+        span {
+          width: 20px;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 12px;
+          &.big {
+            width: 25px;
+            height: 20px;
+          }
+          svg {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    &-logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 246px;
+      transform: translate(-50%, -55%);
+      img {
+        width: 100%;
+        transition: 0.3s ease;
+        &.dark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+// 1500px
+@mixin header-xxxxlg-xxxxxlg {
+  .header {
+    &__inner {
+      padding: 30px 0;
+      &-contact {
+        min-height: 42px;
+        a {
+          letter-spacing: 0;
+          font-size: 12px;
+          margin-right: 18px;
+          span {
+            width: 18px;
+            height: 22px;
+            margin-right: 8px;
+            &.big {
+              width: 22px;
+              height: 18px;
+            }
+          }
+        }
+      }
+      &-logo {
+        width: 175px;
+      }
+    }
+  }
+}
+// 1380px
+@mixin header-xxxlg-xxxxlg {
+  .header {
+  }
+}
+// 1250px
+@mixin header-xlg-xxlg-extra {
+  .header {
+  }
+}
+// 1180px
+@mixin header-xlg-xxlg {
+  .header {
+  }
+}
+// 1024px
+@mixin header-lg-xlg {
+  .header {
+    border-bottom: 1px solid rgba($white, 0.15);
+    &.sticky {
+      border-color: rgba($color: #2b3d8b, $alpha: 0.15);
+      .burger {
+        &::before {
+          background-color: $primary;
+        }
+        &::after {
+          background-color: $primary;
+        }
+        span {
+          background-color: $primary;
+        }
+        &__outer {
+          &::before {
+            background-color: rgba($color: #2b3d8b, $alpha: 0.15);
+          }
+          b {
+            color: $black2;
+          }
+        }
+      }
+    }
+    &.light {
+      border-color: rgba($color: #2b3d8b, $alpha: 0.15);
+      .burger {
+        &::before {
+          background-color: $primary;
+        }
+        &::after {
+          background-color: $primary;
+        }
+        span {
+          background-color: $primary;
+        }
+        &__outer {
+          &::before {
+            background-color: rgba($color: #2b3d8b, $alpha: 0.15);
+          }
+          b {
+            color: $black2;
+          }
+        }
+      }
+    }
+    &.active {
+      background-color: $white;
+      .header {
+        &__inner {
+          &-logo {
+            img {
+              opacity: 0;
+              &.dark {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+      .burger {
+        &::before {
+          background-color: $primary;
+        }
+        &::after {
+          background-color: $primary;
+        }
+        span {
+          background-color: $primary;
+        }
+        &__outer {
+          &::before {
+            background-color: rgba($color: #2b3d8b, $alpha: 0.15);
+          }
+          b {
+            color: $black2;
+          }
+        }
+      }
+    }
+    &__inner {
+      padding: 20px 0;
+      &-contact {
+        display: none;
+      }
+      &-logo {
+        width: 130px;
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: translate(0);
+      }
+    }
+  }
+}
+// 540px
+@mixin header-xsm-sm {
+  .header {
+    &__inner {
+      padding: 16px 0;
+      &-logo {
+        width: 110px;
+      }
+    }
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
